@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>94. Create a Form and Display Input</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #777bb4; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 12px; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>94. Create a Form and Display Input</h1>
+    <pre>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = htmlspecialchars($_POST["name"]);
+        $email = htmlspecialchars($_POST["email"]);
+        echo "Name: $name &lt;br&gt;";
+        echo "Email: $email";
+    }
+?&gt;
+&lt;form method="post"&gt;
+    Name: &lt;input type="text" name="name" required&gt;&lt;br&gt;
+    Email: &lt;input type="email" name="email" required&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;</pre>
+</div>
+</body>
+</html>

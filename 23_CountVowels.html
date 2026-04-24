@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23. Count Vowels in a String</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #007bff; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>23. Count Vowels in a String</h1>
+    <pre>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[100];
+    int count = 0;
+    printf("Enter a string: ");
+    scanf("%s", str);
+    for (int i = 0; i < strlen(str); i++) {
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || 
+            str[i] == 'o' || str[i] == 'u' ||
+            str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || 
+            str[i] == 'O' || str[i] == 'U')
+            count++;
+    }
+    printf("Vowels = %d\n", count);
+    return 0;
+}</pre>
+</div>
+</body>
+</html>

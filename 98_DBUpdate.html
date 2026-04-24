@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>98. Update Data in Database</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #777bb4; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 12px; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>98. Update Data in Database</h1>
+    <pre>&lt;?php
+    $conn = new mysqli("localhost", "root", "", "mydb");
+    
+    $sql = "UPDATE users SET email='newemail@example.com' WHERE id=1";
+    
+    if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+?&gt;</pre>
+</div>
+</body>
+</html>

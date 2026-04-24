@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>45. Find Sum of Digits</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #f7df1e; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>45. Find Sum of Digits</h1>
+    <pre>function sumOfDigits(num) {
+    let sum = 0;
+    num = Math.abs(num);
+    while (num !== 0) {
+        sum += num % 10;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+console.log(sumOfDigits(12345));</pre>
+    <div class="output"><strong>Output:</strong> 15</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>78. Check Palindrome Number</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #777bb4; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>78. Check Palindrome Number</h1>
+    <pre>&lt;?php
+    $num = 121;
+    $original = $num;
+    $rev = 0;
+    while ($num != 0) {
+        $rem = $num % 10;
+        $rev = $rev * 10 + $rem;
+        $num = intval($num / 10);
+    }
+    if ($original == $rev)
+        echo "$original is Palindrome";
+    else
+        echo "$original is Not Palindrome";
+?&gt;</pre>
+</div>
+</body>
+</html>

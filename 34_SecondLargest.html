@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>34. Find Second Largest Element</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #007bff; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>34. Find Second Largest Element</h1>
+    <pre>#include &lt;stdio.h&gt;
+int main() {
+    int arr[5] = {5, 10, 3, 8, 2};
+    int max1 = -1, max2 = -1;
+    for (int i = 0; i < 5; i++) {
+        if (arr[i] > max1) {
+            max2 = max1;
+            max1 = arr[i];
+        } else if (arr[i] > max2 && arr[i] != max1)
+            max2 = arr[i];
+    }
+    printf("Second largest = %d\n", max2);
+    return 0;
+}</pre>
+</div>
+</body>
+</html>

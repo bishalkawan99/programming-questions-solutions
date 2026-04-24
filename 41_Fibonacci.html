@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>41. Generate Fibonacci Series</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #f7df1e; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>41. Generate Fibonacci Series</h1>
+    <pre>function fibonacci(n) {
+    let a = 0, b = 1;
+    console.log(a + " " + b);
+    for (let i = 2; i < n; i++) {
+        let c = a + b;
+        console.log(c);
+        a = b;
+        b = c;
+    }
+}
+fibonacci(8);</pre>
+</div>
+</body>
+</html>

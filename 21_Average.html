@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>21. Calculate Average of Array</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #007bff; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .output { background: #f0f0f0; padding: 10px; margin-top: 10px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>21. Calculate Average of Array</h1>
+    <pre>#include &lt;stdio.h&gt;
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+    int sum = 0;
+    for (int i = 0; i < 5; i++)
+        sum += arr[i];
+    float avg = sum / 5.0;
+    printf("Average = %.2f\n", avg);
+    return 0;
+}</pre>
+</div>
+</body>
+</html>
